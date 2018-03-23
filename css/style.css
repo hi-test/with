@@ -1,0 +1,98 @@
+html,
+body,
+.containers {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    outline: none !important;
+}
+
+.containers .bg {
+    background: url("./../assests/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+}
+
+.containers .tx {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.container .con span {
+    color: #FF3745;
+    font-size: 60px;
+    border: 1px solid #D7E4D0;
+    border-radius: 50%;
+    background-color: #FAFBF6;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buttons button:last-child {
+    color: #FF3745;
+}
+
+.btn-danger {
+    background-color: #FF3745;
+}
+
+.clear:before,
+.clear:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.input-group {
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    color: white;
+}
+
+.qq,
+.wechat,
+.zhi {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    margin: 10px;
+}
+
+.qq {
+    background-image: url('./../assests/qq.png');
+}
+
+.wechat {
+    background-image: url('./../assests/wechat.png');
+}
+
+.zhi {
+    background-image: url('./../assests/ailipay.png');
+}
+
+.icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
