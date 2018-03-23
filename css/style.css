@@ -29,21 +29,21 @@ button {
 }
 
 .container .con span {
-    color: #FF3745;
+    color: #ff3745;
     font-size: 60px;
-    border: 1px solid #D7E4D0;
+    border: 1px solid #d7e4d0;
     border-radius: 50%;
-    background-color: #FAFBF6;
+    background-color: #fafbf6;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .buttons button:last-child {
-    color: #FF3745;
+    color: #ff3745;
 }
 
 .btn-danger {
-    background-color: #FF3745;
+    background-color: #ff3745;
 }
 
 .clear:before,
@@ -60,7 +60,7 @@ button {
 footer {
     width: 100%;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 0;
     color: white;
 }
@@ -79,15 +79,15 @@ footer {
 }
 
 .qq {
-    background-image: url('./../assests/qq.png');
+    background-image: url("./../assests/qq.png");
 }
 
 .wechat {
-    background-image: url('./../assests/wechat.png');
+    background-image: url("./../assests/wechat.png");
 }
 
 .zhi {
-    background-image: url('./../assests/ailipay.png');
+    background-image: url("./../assests/ailipay.png");
 }
 
 .icon {
