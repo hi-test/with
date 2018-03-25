@@ -50,6 +50,12 @@ button {
     margin-bottom: 50px;
 }
 
+button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .buttons button:last-child {
     color: #ff3745;
 }

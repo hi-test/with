@@ -6,46 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.css" rel="stylesheet">
     <style>
-        .parent {
+        #photo {
             width: 200px;
-            height: 150px;
-            background-color: black;
-            display: flex;
-            flex-flow: row wrap;
-            align-content: flex-start;
+            height: 200px;
         }
         
-        .child {
-            box-sizing: border-box;
-            background-color: white;
-            flex: 0 0 25%;
-            height: 50px;
-            border: 1px solid red;
+        img {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 
 <body>
-    <div class="parent">
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
+    <div class="am-form-group am-form-file">
+        <button type="button" class="am-btn am-btn-danger am-btn-sm">
+    <i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+        <input id="doc-form-file" type="file" multiple accept="image/*" />
     </div>
+    <div id="file-list"></div>
+    <div id="photo"></div>
+    <script src="http://p3a3la3o0.bkt.clouddn.com/js/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.js"></script> -->
+
+    <script>
+        $(function() {
+            $('#doc-form-file').change(function() {
+                var file = this.files[0];
+                var r = new FileReader();
+                r.readAsDataURL(file);
+                $(r).on('load', function() {
+                    $('#photo').html('<img src="' + this.result + '" alt="" />');
+                })
+            })
+        })
+    </script>
 </body>
 
 </html>
